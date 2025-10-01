@@ -1,0 +1,243 @@
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(224, 233, 235);
+    margin: 0;
+}
+
+.container {
+    flex: 1;
+}
+
+/* Navbar */
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-brand-logo img {
+    width: 50px;
+    height: auto;
+}
+
+.navbar-brand-name {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.navbar-brand-name-m {
+    color: #EC9A7E;
+}
+
+.navbar-brand-name-a {
+    color: #58B6AE;
+}
+
+.navbar-brand-name h4 {
+    margin: 0;
+}
+
+.navbar {
+    height: 5rem;
+    background-color: white;
+    width: 100%;
+}
+
+.nav-link {
+    color: #222222 !important;
+}
+
+/* Dashboard */
+.dash-board {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.dash-board-info {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.lost-btn,
+.found-btn {
+    height: 7rem;
+    width: 14rem;
+    border: none;
+    opacity: 0.8;
+    color: white;
+    border-radius: 1.5rem;
+    cursor: pointer;
+}
+
+.lost-btn {
+    background-color: #58B6AE;
+}
+
+.found-btn {
+    background-color: #EC9A7E;
+}
+
+.card {
+    height: 20rem;
+    width: 20rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
+    border: none !important;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.reco {
+    width: 200px;
+    height: 200px;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    background-color: #58B6AE;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.reco h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Footer */
+.f-info {
+    height: 8rem;
+    background-color: #edebed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.f-info-socilas,
+.f-info-links,
+.f-info-brad {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.f-info-socilas i {
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+
+.f-info-links a {
+    color: #000;
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+.f-info-links a:hover {
+    text-decoration: underline;
+}
+
+/* Cards (for listings) */
+.card-img-top {
+    border-radius: 1rem !important;
+    width: 100% !important;
+    height: 20rem !important;
+    object-fit: cover !important;
+}
+
+.card-body {
+    padding: 0 !important;
+    margin-top: 1rem;
+}
+
+.listing-links {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Card effect */
+.card-img-overlay {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.3s ease;
+    border-radius: 1rem;
+}
+
+.card-img-overlay:hover {
+    opacity: 0.2;
+    background-color: white;
+}
+
+/* Report buttons */
+.srch {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+.btn-lr,
+.btn-fr {
+    height: 3rem;
+    border: none;
+    color: white;
+    border-radius: 1.5rem;
+    width: 30%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.btn-lr {
+    background-color: #58B6AE;
+}
+
+.btn-fr {
+    background-color: #EC9A7E;
+}
+
+/* Button icons */
+.fas {
+    margin-right: 0.5rem;
+}
+
+/* Show page card */
+.show-card {
+    margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: none !important;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
