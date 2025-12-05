@@ -58,7 +58,7 @@ main().then(() => {
 // });
 
 // route to get all listings
-app.get("/listings",async(req, res) => {
+app.get("/",async(req, res) => {
     const alllistings=await Listing.find({})
     res.render("listings/index.ejs", {alllistings});
 });
@@ -123,9 +123,9 @@ app.get("/listings/:id", async(req, res) => {
 
 
 // step3: Define a simple route
-app.get('/', (req, res) => {
-    res.send('Hello World');
-});
+// app.get('/', (req, res) => {
+//     res.send('Hello World');
+// });
 
 
 // step2: Listen on port 8080
